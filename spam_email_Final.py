@@ -2,12 +2,12 @@ import streamlit as st
 import joblib 
 import pandas as pd
 
-# Load the model
+
 spam = joblib.load('Spam_Emial_Detector.joblib')
 model = spam['model']
 vectorizer = spam['vectorizer']
 
-# Custom CSS for modern styling
+
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
@@ -89,7 +89,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# App layout
+
 st.markdown('<h1 class="header">📧 Smart Email Analyzer</h1>', unsafe_allow_html=True)
 
 with st.container():
